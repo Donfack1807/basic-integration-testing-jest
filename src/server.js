@@ -9,7 +9,7 @@ async function main () {
 
     await connectToDB(MONGODB_URI, MONGODB_DB)
 
-    const port = process.env.PORT || 8080
+    const port = process.env.PORT || 4200
     app.listen(port)
     console.info(`Listening to http://localhost:${port}`)
 }
